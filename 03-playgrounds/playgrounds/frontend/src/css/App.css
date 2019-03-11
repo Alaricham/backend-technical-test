@@ -1,0 +1,106 @@
+:root {
+  --first: #f3f8ff;
+  --second: #deecff;
+  --third: #c6cfff;
+  --fourth: #c6cfff;
+  --fifth: #e8d3ff;
+}
+
+body {
+  background-color: var(--first);
+}
+
+button {
+  border-radius: 5px;
+  border: 1px solid black;
+  background-color: var(--second);
+  padding: 5px 20px;
+}
+
+li {
+  list-style: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+li:hover {
+  background-color: var(--fifth)
+}
+
+.map  {
+  width:  0;
+  height: 0;
+  position: absolute;
+}
+
+#searchBar, #list, #weather, #weatherlist, .dayList, .info, .selected {
+  border-radius: 10px;
+}
+
+#searchBar, #list, #weather {
+  margin-top: 5%;
+  margin-left: 20px;
+
+}
+
+#searchBar, #list {
+  padding: 20px;
+  width: 800px;
+}
+
+#searchBar {
+  text-align: center;
+  background-color: var(--third);
+}
+
+#list {
+  margin-top: 20px;
+  background-color: var(--third);
+}
+
+#weather {
+  background-color: var(--third);
+  width: 800px;
+  height: 500px;
+  margin-top: 20px;
+}
+
+#weatherlist {
+  height: 400px;
+  overflow-x: scroll;
+  padding: 10px 20px;
+
+}
+
+.dayList {
+  padding: 10px;
+}
+
+.dayList:nth-of-type(2n) {
+  background-color: var(--fifth)
+}
+
+.dayList:nth-of-type(2n + 1) {
+  background-color: var(--second);
+}
+
+.info {
+  padding: 10px;
+  background-color: var(--third);
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  left: 900px;
+  top: 600px;
+}
+
+#comments {
+  margin-top: 10px;
+  background-color: var(--second);
+  height: 400px;
+  overflow-y: scroll;
+}
+
+.selected {
+  background-color: var(--second);
+}
